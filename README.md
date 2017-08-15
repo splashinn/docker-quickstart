@@ -1,24 +1,9 @@
-# README
+# Rails and Docker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This boilerplate is a blank Rails 5 application setup using Docker-Compose.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+- Clone this repo
+- `cd` into project directory
+- From command line run `docker-compose build` (to build the image) then `docker-compose run web rake db:create` to create the database (PostgreSQL)
+- To run the application run `docker-compose up`; to stop the application run `docker-compose down`
